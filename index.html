@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sosreng El Perintis</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icon Bootstrap -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Favicon -->
+   <link rel="shortcut icon" href="img/logo_sosis-removebg-preview.png" type="image/x-icon">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3" data-aos="zoom">
+      <img src="img/logo_sosis.jpg" alt="Logo Sosis" class="w-12 h-12 rounded-full">
+      <span class="text-xl font-bold text-gray-800"> X</span>
+      <img src="img/logo_pisang.jpg" alt="Logo Pisang" class="w-12 h-12 rounded-full">    
+    </div>
+
+    <!-- Menu -->
+    <ul id="menu" class="hidden flex-col space-y-6 absolute top-16 right-6 bg-white shadow-md rounded-lg p-6 
+         md:flex md:static md:flex-row md:space-y-0 md:space-x-6 md:bg-transparent md:shadow-none md:p-0 
+         text-gray-600 font-medium transition-all duration-200 ease-in-out" data-aos="zoom">
+      <li><a href="#home" class="hover:text-gray-900">Home</a></li>
+      <li><a href="#about" class="hover:text-gray-900">Tentang</a></li>
+      <li><a href="#produk" class="hover:text-gray-900">Produk</a></li>
+      <li><a href="#kontak" class="hover:text-gray-900">Kontak</a></li>
+    </ul>
+
+    <!-- Tombol -->
+    <a href="https://wa.me/628123456789" target="_blank" class="hidden md:inline-block bg-gray-800 text-white px-5 py-2 rounded-full shadow hover:bg-gray-700 transition">
+      Chat WhatsApp
+    </a>
+
+    <!-- Tombol Menu Mobile -->
+    <button class="md:hidden text-gray-800" id="menu-btn">
+      <i class="bi bi-list text-3xl"></i>
+    </button>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20 bg-gradient-to-br from-gray-300 to-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Sosang<span class="text-gray-800"><br>Sosis Goreng x Pisang Roket</span></h1>
+    <p class="text-lg text-gray-600 mb-8" data-aos="fade-up">Temukan produk terbaik dengan harga terjangkau</p>
+    <a href="#produk" class="bg-gray-800 text-white px-6 py-3 rounded-full shadow hover:bg-gray-700 transition">Lihat Produk</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Tentang Kami</h2>
+    <p class="text-center text-gray-600 max-w-3xl mx-auto">
+      Kami menyediakan berbagai produk berkualitas terbaik dengan harga yang terjangkau. 
+      Kepuasan pelanggan adalah prioritas utama kami.
+    </p>
+    <div id="autoScrollGallery" 
+     class="flex gap-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar p-4 scroll-smooth">
+      <!-- Item 1 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1015/800/480" alt="Image 1" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 2 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1016/800/480" alt="Image 2" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 3 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1018/800/480" alt="Image 3" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 4 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1020/800/480" alt="Image 4" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 1 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1015/800/480" alt="Image 1" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 2 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1016/800/480" alt="Image 2" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 3 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1018/800/480" alt="Image 3" class="w-full h-full object-cover">
+      </div>
+      <!-- Item 4 -->
+      <div class="flex-shrink-0 w-64 h-40 rounded-xl overflow-hidden shadow-md snap-center bg-gray-200 transition-transform duration-300 hover:scale-105">
+        <img src="https://picsum.photos/id/1020/800/480" alt="Image 4" class="w-full h-full object-cover">
+      </div>
+    </div>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto">
+            Kami menyediakan berbagai produk berkualitas terbaik dengan harga yang terjangkau. 
+            Kepuasan pelanggan adalah prioritas utama kami.
+      </p>
+    </section>
+
+  <!-- Produk -->
+  <section id="produk" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Produk Unggulan</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-lg transition">
+        <img src="img/poster_sosis.jpg" alt="Produk 1" class="mx-auto mb-4 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Produk 1</h3>
+        <p class="text-gray-600 mb-4">Deskripsi singkat produk</p>
+        <span class="block font-bold text-gray-800 mb-4">Rp 150.000</span>
+        <a href="https://wa.me/628123456789" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-700">Beli Sekarang</a>
+      </div>
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-lg transition">
+        <img src="img/poster_sosis.jpg" alt="Produk 2" class="mx-auto mb-4 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Produk 2</h3>
+        <p class="text-gray-600 mb-4">Deskripsi singkat produk</p>
+        <span class="block font-bold text-gray-800 mb-4">Rp 200.000</span>
+        <a href="https://wa.me/628123456789" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-700">Beli Sekarang</a>
+      </div>
+      <!-- Card -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-lg transition">
+        <img src="img/poster_sosis.jpg" alt="Produk 3" class="mx-auto mb-4 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Produk 3</h3>
+        <p class="text-gray-600 mb-4">Deskripsi singkat produk</p>
+        <span class="block font-bold text-gray-800 mb-4">Rp 300.000</span>
+        <a href="https://wa.me/628123456789" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-700">Beli Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="max-w-7xl mx-auto px-6 py-16 text-center bg-gradient-to-tr from-gray-300 to-white">
+    <h2 class="text-3xl font-bold text-center mb-12">Kontak</h2>
+    <p class="text-lg text-gray-600 mb-8">Pesan sekarang dan hubungi kami melalui form di bawah ini</p>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.117500103375!2d108.78749247356474!3d-6.8765231672813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f07d2133aa891%3A0xd7a1f06836ba5cef!2sAsrama%20Nurul%20Hidayah!5e0!3m2!1sid!2sid!4v1749303419531!5m2!1sid!2sid" allowfullscreen loading="lazy" class="w-full h-72 rounded-lg"></iframe>
+      
+      <!-- Form -->
+      <form onsubmit="sendToWhatsApp(); return false;" class="space-y-4">
+        <div class="flex items-center border rounded-lg px-3 py-2">
+          <i data-feather="user" class="mr-2"></i>
+          <input type="text" id="nama" placeholder="Nama" class="w-full outline-none" required>
+        </div>
+        <div class="flex items-center border rounded-lg px-3 py-2">
+          <i data-feather="mail" class="mr-2"></i>
+          <input type="email" id="email" placeholder="Email" class="w-full outline-none" required>
+        </div>
+        <div class="flex items-center border rounded-lg px-3 py-2">
+          <i data-feather="phone" class="mr-2"></i>
+          <input type="text" id="telepon" placeholder="Nomor Handphone" class="w-full outline-none" required>
+        </div>
+        <button type="submit" class="bg-gray-800 text-white px-5 py-2 rounded-full shadow hover:bg-gray-700 transition">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-8 mt-12">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://www.instagram.com/pondok_nurul.hidayah" target="_blank"><i data-feather="instagram"></i></a>
+      <a href="https://www.facebook.com/share/16nYJN2bJE/" target="_blank"><i data-feather="facebook"></i></a>
+      <a href="https://youtube.com/@nurulhidayahofficialii4378" target="_blank"><i data-feather="youtube"></i></a>
+      <a href="https://www.tiktok.com/@nurul.hidayahofficial" target="_blank"><i class="bi bi-tiktok text fs-5"></i></a>
+    </div>
+    <div class="space-x-4 mb-4">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#produk">Produk</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <p>Created by <a href="https://lynk.id/syafei" target="_blank" class="text-blue-400 hover:underline">Hanif Achmad Syafei</a> | &copy; 2025.</p>
+  </footer>
+
+  <!-- Feather Icons -->
+  <script>feather.replace();</script>
+
+  <!-- Javascript -->
+   <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  // Toggle menu untuk mobile
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      setTimeout(() => {
+        menu.classList.add('opacity-100', 'scale-y-100');
+        menu.classList.remove('opacity-0', 'scale-y-0');
+      }, 10);
+    } else {
+      menu.classList.add('opacity-0', 'scale-y-0');
+      menu.classList.remove('opacity-100', 'scale-y-100');
+      setTimeout(() => {
+        if (window.innerWidth < 768) {
+          menu.classList.add('hidden');
+        }
+      }, 300); // tunggu animasi selesai
+    }
+  });
+
+  // Tutup menu kalau klik di luar (mobile saja)
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth < 768 && !menu.contains(e.target) && !menuBtn.contains(e.target)) {
+      menu.classList.add('opacity-0', 'scale-y-0');
+      menu.classList.remove('opacity-100', 'scale-y-100');
+      setTimeout(() => {
+        if (window.innerWidth < 768) {
+          menu.classList.add('hidden');
+        }
+      }, 300);
+    }
+  });
+
+  // Saat resize → reset kondisi
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      menu.classList.remove('hidden', 'opacity-0', 'scale-y-0');
+      menu.classList.add('opacity-100', 'scale-y-100');
+    } else {
+      menu.classList.add('hidden', 'opacity-0', 'scale-y-0');
+      menu.classList.remove('opacity-100', 'scale-y-100');
+    }
+  });
+</script>
+
+<!-- Animate Modal About -->
+<script>
+  const gallery = document.getElementById("autoScrollGallery");
+  let autoScrollInterval;
+  let userScrolling;
+
+  function startAutoScroll() {
+    stopAutoScroll();
+    autoScrollInterval = setInterval(() => {
+      gallery.scrollBy({ left: 250, behavior: "smooth" });
+
+      // jika sudah di akhir, balik ke awal
+      if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+        gallery.scrollTo({ left: 0, behavior: "smooth" });
+      }
+    }, 2000); // setiap 2 detik scroll
+  }
+
+  function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+  }
+
+  // hentikan auto scroll saat user scroll manual
+  gallery.addEventListener("scroll", () => {
+    stopAutoScroll();
+    clearTimeout(userScrolling);
+    userScrolling = setTimeout(() => {
+      startAutoScroll();
+    }, 3000); // tunggu 3 detik baru jalan lagi
+  });
+
+  // mulai auto scroll ketika halaman load
+  startAutoScroll();
+</script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false
+  });
+</script>
+
+</body>
+</html>
