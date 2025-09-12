@@ -79,3 +79,4 @@
 
   // mulai auto scroll ketika halaman load
   startAutoScroll();
+
