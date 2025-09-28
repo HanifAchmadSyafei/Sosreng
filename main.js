@@ -80,3 +80,23 @@
   // mulai auto scroll ketika halaman load
   startAutoScroll();
 
+  // Kirim pesan ke Admin
+ function sendToWhatsApp() {
+  var nama = document.getElementById("nama").value;
+  var email = document.getElementById("email").value;
+  var telepon = document.getElementById("telepon").value;
+
+  // Ganti dengan nomor WhatsApp kamu tanpa + atau 0 di depan
+  var noWA = "6283872261184"; 
+
+  var pesan = 
+    "Assalamualaikum Mas Hanif Aku mau beli jajan dong...🙏🏻😊 %0A" ;
+    // "Nama: " + nama + "%0A" +
+    // "Email: " + email + "%0A" +
+    // "No HP: " + telepon
+    // "Saya ingin beli jajan %0A";
+
+  var url = "https://wa.me/" + noWA + "?text=" + pesan;
+  window.open(url, "_blank");
+}
+
